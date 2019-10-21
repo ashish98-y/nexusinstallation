@@ -29,7 +29,8 @@ working with nexus from build/jenkins server
         "disable-legacy-registry":true
      }
     
-    here 3.14.245.92 is the public ip of nexus server and its port 8081 is the default port of nexus
+    here 3.14.245.92 is the public ip of nexus server and its port 8081 is the default port of nexus 
+    and 8083 is the repository port of http.
 
     sudo service docker restart
     sudo docker login -u admin -p sowdha1965 3.14.245.92:8083
