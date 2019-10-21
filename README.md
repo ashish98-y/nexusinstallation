@@ -25,12 +25,16 @@ install jre (jdk)
      sudo service nexus status
 
 working with nexus from build/jenkins server
+
     sudo vi /etc/docker/daemon.json
+    
+    where daemon.json is
     {
         "insecure-registries":["3.14.245.92:8083"],
         "disable-legacy-registry":true
      }
-     here 3.14.245.92 is the public ip of nexus server and its port
+    
+    here 3.14.245.92 is the public ip of nexus server and its port
 
     sudo service docker restart
     sudo docker login -u admin -p sowdha1965 3.14.245.92:8083
